@@ -1,70 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+:root{
+    --background-col:#f0f2f5;                       
+    --text-col:#000;
+    --box-col:#Fff;
+}
+
 body {
-    background-color:#6A5ACD;
+    background-color:var(--background-col);
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
 }
-.box{
-    border:1px solid #FFF;
-    border-radius:7px;
-    height:550px;
-    background-color:#FFF;
-    
+
+nav{
+    height: 5vh;
+    width: 100%;
 }
-form{
-    text-align:center;
-    margin-top:80px;
-    height:100px;
+
+.theme{
+    margin-left: 90%;
 }
-h2{
-    margin-top:-60px;
+
+.theme button{
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
-#fbbutton{
-background-color:#1E90FF;
-border:none;
-border-radius:5px;
-margin-top:265px;
-margin-left:20px;
-margin-right:20px;
-height:40px;
-width:300px;
-text-align:center;
-    
+
+.fa-solid{
+    color: #087CFF;
+    font-size: 5vh;
+    float: right;
+    background-color: transparent;
+    padding: 1vh;
+    cursor: pointer;
+    padding-right: 2vh;
 }
-#g{
-background-color:#F5F5F5;
-border:1px solid #DCDCDC;
-border-radius:5px;
-margin:15px 20px;
-height:40px;
-width:300px;
+
+.real-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 95vh;
+    width: 100%;
+}
+
+.flex-1,.flex-2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flex-div{
+    margin: 0 14vh;
+}
+
+h1{
+    color: #0078F6;
+    font-size: 9vh;
+    font-weight: 700;
 
 }
-img{
-    height:35px;
-    float:left ;
+
+h2{
+    margin-top: 2vh;
+    font-size: 4.5vh;
+    font-weight: 400;
+    word-wrap: break-word;
+    letter-spacing: -0.2vh;
+    color: var(--text-col);
 }
-button{
-    background-color:#1E90FF;
-    border:none;
-    border-radius:5px;
-    color:white;
-    height:40px;
-    width:300px;
-    margin-top:20px;
-    font-weight:bolder ;
-    
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--box-col);
+    padding: 2%;
+    border: none;
+    border-radius: 1vh;
+    height: 50vh;
+    width: 55vh;
+    box-shadow: 0px 0px 20px #DBDDE0;
 }
-a{
-    text-decoration:none;
-    color:#6495ED;
-}
-a:hover{
-    color:#9932CC;
-}
+
 input{
-    margin:5px;
-    height:35px;
-    width:300px;
-    border:1px solid #DCDCDC;
-    
-    border-radius:5px  
-    
+    width: 100%;
+    border:0.2vh solid #c0c0c0;
+    font-size: 2.4vh;
+    padding: 4%;
+    outline: none;
+    border-radius: 1vh;
+    background-color: transparent;
+    color: var(--text-col);
+    margin: 0px;    
 }
+
+.login-btn{
+    background-color:#1877F2;
+    width: 100%;
+    padding: 4%;
+    border-radius: 1vh;
+    color: #fff;
+    font-size: 3vh;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color:#087CFF;
+    font-size: 2.2vh;
+}
+
+hr{
+    border: 0.1vh solid #c0c0c0;
+    width: 100%;
+    margin-top: 3.2vh;
+}
+
+.new-btn{
+    background-color: #36A420;
+    color: #fff;
+    font-size: 2.4vh;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 4%;
+    border: none;
+    border-radius: 1vh;
+    margin-top: 2.5vh;
+}
+
+/* media queries */
+
+@media screen and (max-width:1500px){
+    .flex{
+        height: 48vh;
+        width: 53vh;
+        padding: 4%;
+    }   
+}
+@media screen and (max-width:1400px){
+    .flex{
+        height: 45vh;
+        width: 50vh;
+    }   
+    .flex-div{
+        margin: 0 2vh;
+    }
+    .flex-1{
+        height: 30%;
+        width: 100%;
+    }
+    .flex-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70%;
+        width: 100%;
+}
+@media screen and (max-width:1250px){
+
+    .real-flex{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .flex{
+        height: 50vh;
+        width: 55vh;
+    }
+    
+    h1{
+        margin-top: 1.5vh;
+    }
+    h2{
+        font-size: 5vh;
+    }
+    
+    }
+    nav{
+        height: 5vh;
+    }
+}
+
+@media screen and (max-width:850px){
+    .flex{
+        height: 48vh;
+        width: 53vh;
+    }
+}
+@media screen and (max-width:700px){
+    .flex{
+        height: 45vh;
+        width: 50vh;
+    }
+}
+
