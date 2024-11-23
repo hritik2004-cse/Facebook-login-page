@@ -1,58 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            sign up page 
-        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Facebook-log in or sign up</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="img/facebook_logo.png">
+        <script src="https://kit.fontawesome.com/a9da22d09f.js" crossorigin="anonymous"
+    ></script>
     </head>
-    
     <body>
-    
-    <div class="box">
-    
-        <form>
-        
-            <h2>
-                signup
-            </h2>
-            
-                <input type="email" id="email" placeholder="Email" required><br>
-                <input type="password" id="pass" placeholder="Create password" required min ="6" max  ="8" ><br>
-                <input type="password" id="pass" placeholder="Confirm password"required min lenght="6" max lenght="8">
-                    
-                <br>
-                <button type="submit" oneclick=("alert('hello')")>
-                    signup
+        <nav>
+            <div class="theme">
+                <button id="theme-toggle">
+                  <i id="theme-icon" class="fa-solid fa-sun"></i>
                 </button>
-                
-                <p style="margin-top:5px">                                Already have an account?
-                <a href="https://m.facebook.com/">
-                    login
-                </a>
-                    
-                </p>
-        
-        </form>
-        
-        
-        <section id="fbbutton">
-        
-        <img src="https://ww2.freelogovectors.net/wp-content/uploads/2023/03/facebook-logo-new-2019-freelogovectors.net_.png">
-                            <p style="color:white ; margin-top:300px; margin-bottom:-600px;">login with facebook</p>
-        
-            
-        </section>
-        <section id="g">
-            <img src="https://w7.pngwing.com/pngs/249/19/png-transparent-google-logo-g-suite-google-guava-google-plus-company-text-logo.png">
-            <p style="color:#A9A9A9;margin-top:10px;margin-left:90px">
-                login with google
-            </p>
-        </section>
-        
-    </div>
-    
-    
-        
+              </div>
+        </nav>
+        <div class="real-flex">
+            <div class="flex-1">
+                <div class="flex-div">
+                    <h1>facebook</h1>
+                    <h2>Connect with friends and the world around you on Facebook</h2>
+                </div>
+            </div>
+            <div class="flex-2">
+                <div class="flex">
+                    <input type="email" id="email" placeholder="Email address or phone number" required><br>
+                    <input type="Password" id="pass" placeholder="Password" required maxlength="8" ><br>
+                    <button type="submit" class="login-btn" onclick="greeting()">
+                        Log in
+                    </button><br>
+                    <a href="#">Forgotten password?</a>
+                    <hr>
+                    <button class="new-btn">Create new account</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
