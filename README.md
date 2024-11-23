@@ -64,7 +64,7 @@ Upcoming Features
 
 Contributors
 ------------
-**Your Name** (GitHub Profile)  
+**Hritik Sharma** (GitHub Profile)  
 Developer and designer of this project.
 
 License
